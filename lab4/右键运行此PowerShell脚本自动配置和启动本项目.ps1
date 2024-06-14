@@ -25,7 +25,7 @@ try
 
         foreach ($version in $pythonVersions)
         {
-            Write-Host "检测到本机已有 Python "+$version
+            Write-Host "检测到本机已有 Python $version"
             if ($version -eq $pythonVersion)
             {
                 $pythonInstalled = $true
@@ -45,11 +45,11 @@ catch {
 # 输出结果
 if ($pythonInstalled)
 {
-    Write-Host "Python "+$pythonVersion+" 已安装在计算机上。"
+    Write-Host "Python $pythonVersion 已安装在计算机上。"
 }
 else
 {
-    Write-Host "Python "+$pythonVersion+" 未在计算机上安装，准备自动安装Python "+$pythonVersion
+    Write-Host "Python $pythonVersion 未在计算机上安装，准备自动安装Python $pythonVersion"
 }
 
 Write-Host "正在加载中，请耐心等待，切勿关闭此窗口！"

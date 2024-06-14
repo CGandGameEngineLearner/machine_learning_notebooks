@@ -5,3 +5,5 @@ if exist requirements.txt (
 ) else (
     echo do not have requirements.txt
 )
+
+jupyter notebook ./src/main.ipynb
