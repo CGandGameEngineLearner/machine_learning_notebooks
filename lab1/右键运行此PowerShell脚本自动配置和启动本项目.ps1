@@ -5,7 +5,7 @@ $pythonVersion = "3.8.6"
 $pythonVersionNumericString = $pythonVersion -replace '\D', ''
 
 $installerUrl = "https://mirrors.huaweicloud.com/python/"+$pythonVersion+"/python-3.8.6-amd64.exe"
-$installerFile = "python-"+$pythonVersion+"-amd64.exe"
+$installerFile = "python-" + $pythonVersion + "-amd64.exe"
 
 # 检查是否已经安装了此版本的Pyhon
 $pythonInstalled = $false
