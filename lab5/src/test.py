@@ -119,7 +119,7 @@ print('RMSE:', RMSE)
 
 # 模型预测
 # 读取测试集数据
-test_data = pd.read_csv('../data/test_old.csv')
+test_data = pd.read_csv(test_csv_path)
 test_data = test_data.drop(columns=unnecessary_features)  # 去除字符特征
 
 # 只需要高相关性的特征
