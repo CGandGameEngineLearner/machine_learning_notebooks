@@ -8,8 +8,8 @@ from sklearn import metrics
 from sklearn.model_selection import train_test_split
 
 # 文件路径
-train_csv_path = '../data/train_old.csv'
-test_csv_path = '../data/test_old.csv'
+train_csv_path = '../data/train.csv'
+test_csv_path = '../data/test.csv'
 result_csv_path = '../data/result.csv'
 submission_csv_path = '../data/202131771337 李进文.csv'
 
