@@ -140,6 +140,6 @@ origin_data = pd.read_csv(test_csv_path)
 result = pd.concat([origin_data, pd.DataFrame(predict_score, columns=['predicted_score'])], axis=1)
 result.to_csv(result_csv_path, index=False)
 
-# 保存表头为: ein,score
+# 保存表头为: ein,score 的表格 用于提交结果
 result = pd.concat([pd.DataFrame(origin_data, columns=['ein']), pd.DataFrame(predict_score, columns=['score'])], axis=1)
 result.to_csv(submission_csv_path, index=False)
