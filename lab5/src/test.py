@@ -97,7 +97,7 @@ high_correlation_features = [
     'size',
     'ascore',
     'program_exp_p',
-    'fscore',
+    'fscore'
 ]
 train_data = train_data[high_correlation_features]
 
@@ -109,7 +109,7 @@ print(train_data.shape)
 X_train, X_val, y_train, y_val = train_test_split(train_data, y_data, test_size=0.3, random_state=random_state)
 
 # 训练模型并预测验证集score
-gbr = GradientBoostingRegressor(max_depth=4, n_estimators=7004, subsample=0.53, learning_rate=0.03)
+gbr = GradientBoostingRegressor(max_depth=4, n_estimators=3004, subsample=0.3, learning_rate=0.03)
 gbr.fit(X_train, y_train)
 array_predict_score = gbr.predict(X_val)
 
